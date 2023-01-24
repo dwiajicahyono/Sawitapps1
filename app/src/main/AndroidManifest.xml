@@ -15,9 +15,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Webview">
         <activity
+            android:name=".Splash2Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".SplashActivity"
-            android:exported="false"
-            >
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -31,7 +37,7 @@
         </activity>
         <activity
             android:name=".menu"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".info"
             android:exported="true" />

@@ -8,7 +8,7 @@ import android.os.Handler;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class SplashActivity extends AppCompatActivity {
+public class Splash2Activity extends AppCompatActivity {
     Handler h= new Handler();
 
     @Override
@@ -19,14 +19,14 @@ public class SplashActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
 
-        setContentView(R.layout.activity_splash);
+        setContentView(R.layout.activity_splash2);
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i= new Intent(SplashActivity.this, Splash2Activity.class);
+                Intent i= new Intent(Splash2Activity.this, pilihpola.class);
                 startActivity(i);
                 finish();
             }
-        }, 3000);
+        }, 2000);
     }
 }
