@@ -63,7 +63,7 @@ public class menu extends AppCompatActivity {
     }
 
     public void download(){
-        Intent intent = new Intent(this, pilihpola.class);
+        Intent intent = new Intent(this, SplashActivity.class);
         startActivity(intent);
     }
 

@@ -15,6 +15,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Webview">
         <activity
+            android:name=".SplashActivity"
+            android:exported="false"
+            >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".pilihpola"
             android:exported="false">
             <meta-data
@@ -23,8 +31,7 @@
         </activity>
         <activity
             android:name=".menu"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".info"
             android:exported="true" />
